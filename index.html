@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="app.js">
+    
+    
+    <title>Porfolio</title>
+</head>
+<body>
+
+    <span class="sombra">
+        <section id="inicio" class="inicio">
+            <div class="contenido">
+                <header>
+                    <div class="logo">
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <h1>YUI</h1>
+                    </div>
+                    <nav id="nav" class="">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#servicios">Servicios</a>
+                        <a href="#habilidades">Habilidades</a>
+                        <a href="#trabajos">Trabajos</a>
+                        <a href="#contacto">Contacto</a>
+                    </nav>
+    
+
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+    
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </header>
+    
+                <div class="fila">
+                    <div class="col">
+                        <h2>YUI</h2>
+                        <p>Queremos llevar al alcance de todos los diferentes servicios y estrategias que esta marca tiene para ofrecer,
+                            ayudando de esta manera a facilitar el proceso de elaboración de proyectos personales
+                            relacionados con diseño, ilustración y animación, con el fin de hacerle ver a las personas la gran variedad de herramientas que tienen a su alcance con el fin de
+                            que pierdan el miedo a lo desconocido y abarquen aquellos sueños que deseen realizar con ayuda
+                             del diseño y la innovación.</p>
+                        <button class="btn btn-1">VER BRIEF</button>
+                    </div>
+                    <div class="col">
+                        <div class="contenedor-img">
+                            <img src="imagenes/logo-yui.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </span>
+
+    <section id="servicios" class="servicios">
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circulo">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                    </div>
+                    <h3>PROGRAMACION</h3>
+                    <p>Nos enfocamos en el diseño, codificación, mantenimiento, y protección de cualquier fuente de programas, impulsando la creación de softwares y aplicaciones de marcas. </p> 
+
+                    <p> Solo escríbenos y nosotros lo realizamos.</p>
+
+                    <a href="#">Leer Mas</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color2">
+                        <div class="circulo">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                    </div>
+                    <h3>EDICION</h3>
+                    <p>Hacemos edición de fotografías, páginas, videos, audio, etc. </p> 
+ 
+                    <p>Solo escríbenos y nosotros lo realizamos.</p>
+
+                    <a href="#">Leer Mas</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color3">
+                        <div class="circulo">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                    </div>
+                    <h3>ANIMACION</h3>
+                    <p>Damos vida a personajes, historias y escenarios a través de la tecnología y creatividad. </p>
+
+                    <p>Solo escríbenos y nosotros lo realizamos.</p>
+
+                    <a href="#">Leer Mas</a>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circulo">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                    </div>
+                    <h3>MARKETING</h3>
+                    <p>Investigamos la situación del mercado, impulsamos el posicionamiento de la marca de la empresa, trabajamo en la promoción de la empresa y la marca en el mercado, llevamos a cabo el proceso de fijación de precios.               </p>
+
+                    <p>Solo escríbenos y nosotros lo realizamos.</p>
+
+                    <a href="#">Leer Mas</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color2">
+                        <div class="circulo">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </div>
+                    </div>
+                    <h3>CRITICA DE PROYECTOS</h3>
+                    <p>Nos centramos en revisar páginas de marcas nuevas y todo lo que están conlleven con el fin de revisar el posicionamiento que tendrá y como podría mejorar.</p>
+
+                    <p> Solo escríbenos y nosotros lo realizamos.</p>
+
+                    <a href="#">Leer Mas</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color3">
+                        <div class="circulo">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <h3>ILUSTRACION</h3>
+                    <p>Manejamos diversidad de estilos, por ejemplo, artística, editorial, publicitaria, comic, de producto, etc. </p>
+ 
+                    <p>Solo escribenos y nosotros lo realizamos.</p>
+
+                    <a href="#">Leer Mas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="habilidades" id="habilidades">
+        <div class="contenedor-habi">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="95">
+                                95%
+                            </div>
+                            <h2>HTML & CSS</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="90">
+                                90%
+                            </div>
+                            <h2>AFTER EFECTS</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="85">
+                                85%
+                            </div>
+                            <h2>JAVASCRIPT</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="70">
+                                70%
+                            </div>
+                            <h2>ILUSTRATOR</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="90">
+                                90%
+                            </div>
+                            <h2>ANIMATE</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="90">
+                                90%
+                            </div>
+                            <h2>PHOTOSHOP</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trabajos" id="trabajos">
+        <h2>Mis Trabajos</h2>
+
+        <nav>
+            <a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
+            <a href="javascript:void(0)" class="" id="disenio" onclick="verCategoria('disenio')">Fotografia</a>
+            <a href="javascript:void(0)" class="" id="programacion" onclick="verCategoria('programacion')">Diseño</a>
+            <a href="javascript:void(0)" class="" id="animaciones" onclick="verCategoria('animaciones')">Animaciones</a>
+        </nav>
+                 
+        
+
+        <div class="galeria">
+            <div class="item disenio">
+                <img src="imagenes/foto No 1.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="imagenes/D1.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item animaciones">
+                <img src="imagenes/AN3.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item disenio">
+                <img src="imagenes/foto No 2.jpeg" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item animaciones">
+                <img src="imagenes/AN2.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="imagenes/D2.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item disenio">
+                <img src="imagenes/pilin.jpg" alt="">
+                <div class="info">
+
+                    <h3>Titulo del Trabajo</h3>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="imagenes/D4.jpeg" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="imagenes/D5.jpeg" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contacto" id="contacto">
+        <div class="contenedor-contacto">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="info">
+                        <h3>Email:</h3>
+                        <p>67azz6@gmail.com</p>
+                    </div>
+                    <div class="info">
+                        <h3>Teléfono:</h3>
+                        <p>+57 3336487175</p>
+                    </div>
+                    <div class="info">
+                        <h3>País</h3>
+                        <p>colombia</p>
+                    </div>
+                    <div class="info">
+                        <h3>Ciudad:</h3>
+                        <p>bogota</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="Nombre...">
+                    <input type="text" placeholder="Correo...">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar" class="btn">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Creado por Código Web - 2023 - Aprende Creando</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
